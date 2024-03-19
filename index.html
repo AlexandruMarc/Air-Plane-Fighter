@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Airplane Fighter</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Protest+Guerrilla&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="controls-container">
+			<h2>Controls</h2>
+			<ul class="controls-list">
+				<li><strong>Left Arrow:</strong> Move left</li>
+				<li><strong>Right Arrow:</strong> Move right</li>
+				<li><strong>Space:</strong> Shoot</li>
+				<li><strong>Space:</strong> Reset</li>
+				<li><strong>Enter:</strong> HP Asteroid</li>
+			</ul>
+		</div>
+		<canvas id="canvas1"></canvas>
+		<div class="hide">
+			<img id="player" src="assets/airplane.png" />
+			<img id="background" src="assets/galaxy_6.jpg" />
+			<img id="background_fliped" src="assets/galaxy_6_fliped.jpg" />
+			<img id="enemy" src="assets/asteroid.png" />
+		</div>
+
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
