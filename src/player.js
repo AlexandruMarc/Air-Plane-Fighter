@@ -9,7 +9,7 @@ export class Player {
 		this.x = this.game.width / 2 - this.width / 2;
 		this.y = this.game.height - this.height - 10;
 		this.speed = 6;
-		
+
 		this.image = player;
 	}
 	update() {
@@ -23,7 +23,9 @@ export class Player {
 		// Boundories
 		if (this.x < -this.width * 0.5) this.x = -this.width * 0.5;
 		if (this.x > this.game.width - this.width * 0.5) this.x = this.game.width - this.width * 0.5;
-
+		this.collisionWithCircles();
+	}
+	collisionWithCircles() {
 		// Calculate triangle coordinates
 		this.triangleTopX = this.x + this.width / 2;
 		this.triangleTopY = this.y;

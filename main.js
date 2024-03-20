@@ -93,6 +93,7 @@ window.addEventListener("load", function () {
 				this.projectilesPool.push(new Projectile(this));
 			}
 		}
+
 		//Get free projectiles object from the pool
 		getProjectile() {
 			for (let i = 0; i < this.projectilesPool.length; i++) {
@@ -136,7 +137,7 @@ window.addEventListener("load", function () {
 			setTimeout(() => {
 				game.wainingToStart = true;
 				displayMassage();
-			}, 8000);
+			}, 2000);
 		}
 	}
 
